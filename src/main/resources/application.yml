@@ -3,7 +3,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/movietix
 
     username: postgres
-    password: Tw1stzz@2001
+    password: postgres
 
   jpa:
     defer-datasource-initialization: true
