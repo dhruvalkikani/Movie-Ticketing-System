@@ -45,7 +45,7 @@ public class Booking {
     public void prePersist() {
         this.bookingTime = LocalDateTime.now();
     }
-
+//test
     // Constructors, getters, and setters
     public Booking() {}
 
