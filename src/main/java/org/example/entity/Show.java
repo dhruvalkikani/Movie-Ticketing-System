@@ -1,5 +1,9 @@
 package org.example.entity;
 
+<<<<<<< HEAD
+=======
+import com.fasterxml.jackson.annotation.JsonIgnore;
+>>>>>>> 06de401 (bug fixes)
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,10 +17,18 @@ public class Show {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "movie_id", nullable = false)
+<<<<<<< HEAD
+=======
+    @JsonIgnore
+>>>>>>> 06de401 (bug fixes)
     private Movie movie;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "theater_id", nullable = false)
+<<<<<<< HEAD
+=======
+    @JsonIgnore
+>>>>>>> 06de401 (bug fixes)
     private Theater theater;
 
     @Column(name = "show_time", nullable = false)
@@ -25,9 +37,17 @@ public class Show {
     @Column(name = "screen_no")
     private String screenNo;
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "show", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Seat> seats;
 
+=======
+    @JsonIgnore
+    @OneToMany(mappedBy = "show", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Seat> seats;
+
+    @JsonIgnore
+>>>>>>> 06de401 (bug fixes)
     @OneToMany(mappedBy = "show", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Booking> bookings;
 

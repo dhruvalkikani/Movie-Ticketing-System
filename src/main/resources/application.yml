@@ -1,8 +1,13 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/movietix
+<<<<<<< HEAD
     username: movietix
     password: movietix
+=======
+    username: postgres
+    password: postgres
+>>>>>>> 06de401 (bug fixes)
   jpa:
     defer-datasource-initialization: true
     hibernate:

@@ -1,5 +1,9 @@
 package org.example.entity;
 
+<<<<<<< HEAD
+=======
+import com.fasterxml.jackson.annotation.JsonIgnore;
+>>>>>>> 06de401 (bug fixes)
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import java.util.List;
@@ -25,6 +29,10 @@ public class Movie {
     private Integer duration; // in minutes
 
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+<<<<<<< HEAD
+=======
+    @JsonIgnore
+>>>>>>> 06de401 (bug fixes)
     private List<Show> shows;
 
     // Constructors, getters, and setters
